@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/rectangles.css">
+    <script src='js/rectangles.js'></script>
+
+    <title>Rectangles</title>
+  </head>  
+
+  <body>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"> 
+      <rect rx='5' width='160' height='160' x='20' y='20' fill='blue'>
+      </rect>
+	<switch>
+	  <foreignObject x='20' y='20' width='160' height='160'>
+	    <text id='main-text' class="small"
+	       font-size='xx-small'  xmlns='http://www.w3.org/1999/xhtml' >
+	      What is happening in the world so that nothing that I do
+	      has any impact on anything?
+	    </text>
+	  </foreignObject>
+
+	  <text x='20' y='20'>Your SVG viewer cannot display html.</text>
+	</switch>
+    </svg>
+    <div id='controls'>
+      <label for='x'>X</label><input type='text' id='x' pattern='[0-9]+'/>
+      <label for='y'>Y</label><input type='text' id='y' />
+      <label for='width'>Width</label><input type='text' id='width' />
+      <label for='height'>Height</label><input type='text' id='height' />
+    </div>
+    <input id='text' type='text'/>    
+  </body>
+</html>
