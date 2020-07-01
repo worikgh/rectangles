@@ -1,3 +1,2 @@
 # rectangles
-
-Testing producing SVG images, in particular rectangles
+Produce SVG images, in particular rectangles
