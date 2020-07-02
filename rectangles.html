@@ -11,13 +11,29 @@
 
   <body>
     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"> 
-      <rect id='rect_1'
+      <rect id='a_rect'
             rx='5' width='1' height='1' x='20' y='20' fill='blue'>
       </rect>
 	<switch>
-	  <foreignObject id='foreign_object'
+	  <foreignObject id='a_foreign_object'
                          x='20' y='20' width='1' height='1'>
-	    <p id='main_text'
+	    <p id='a_main_text'
+               class="small"
+	       font-size='xx-small'  xmlns='http://www.w3.org/1999/xhtml' >
+	      What is happening in the world so that nothing that I do
+	      has any impact on anything?
+            </p>
+	  </foreignObject>
+
+	  <text x='20' y='20'>Your SVG viewer cannot display html.</text>
+	</switch>
+      <rect id='b_rect'
+            rx='5' width='1' height='1' x='20' y='20' fill='red'>
+      </rect>
+	<switch>
+	  <foreignObject id='b_foreign_object'
+                         x='20' y='20' width='1' height='1'>
+	    <p id='b_main_text'
                class="small"
 	       font-size='xx-small'  xmlns='http://www.w3.org/1999/xhtml' >
 	      What is happening in the world so that nothing that I do
@@ -28,12 +44,27 @@
 	  <text x='20' y='20'>Your SVG viewer cannot display html.</text>
 	</switch>
     </svg>
-    <div id='controls'>
-      <label for='x'>X</label><input type='number' id='x' pattern='[0-9]+'/>
-      <label for='y'>Y</label><input type='number' id='y' />
-      <label for='width'>Width</label><input type='number' id='width' />
-      <label for='height'>Height</label><input type='number' id='height' />
+    <div id="a_blue_thing">
+      <div id='a_controls'>
+        <label for='x'>X</label><input type='number' id='a_x' pattern='[0-9]+'/>
+        <label for='y'>Y</label><input type='number' id='a_y' />
+        <label for='width'>Width</label><input type='number' id='a_width' />
+        <label for='height'>Height</label><input type='number' id='a_height' />
+        <label for='font_size'>Size</label><input type='number' id='a_font_size' />
+      </div>
+      <textarea name='t1' id='a_text'></textarea>   
     </div>
-    <textarea name='t1' id='text'/>   
+
+
+    <div id="b_blue_thing">
+      <div id='b_controls'>
+        <label for='x'>X</label><input type='number' id='b_x' pattern='[0-9]+'/>
+        <label for='y'>Y</label><input type='number' id='b_y' />
+        <label for='width'>Width</label><input type='number' id='b_width' />
+        <label for='height'>Height</label><input type='number' id='b_height' />
+        <label for='font_size'>Size</label><input type='number' id='b_font_size' />
+      </div>
+      <textarea name='t1' id='b_text'></textarea>
+    </div>
   </body>
 </html>
